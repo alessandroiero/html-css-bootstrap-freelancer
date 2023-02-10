@@ -17,3 +17,11 @@ header{
 #portfolio .row div{
     background-color: purple;
 }
+
+footer{
+    background-color: #3a546d;
+}
+
+.copyright{
+    background-color: #2c3e50;
+}
