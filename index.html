@@ -10,6 +10,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--/Bootstrap -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- /Font Awesome -->
     <!-- Css -->
     <link rel="stylesheet" href="css/style.css">
     <!--/Css -->
@@ -18,20 +22,35 @@
 <body>
     <!-- Header -->
     <header>
-        <div class=" container-xxl py-5 text-white">
-            <div class="row d-flex justify-content-between align-items-center mx-2">
-                <div class="col-6">
-                    logo
+        <div class=" container-xxl py-3 text-white">
+            <nav class="navbar navbar-expand-sm navbar-light">
+                <div class="container-fluid flex-row-reverse  flex-sm-row">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo01" aria-controls="navbarColor01" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+
+                    <a class="navbar-brand text-light" href="#">START BOOTSTRAP</a>
+                    <div class="justify-content-sm-end navbar-collapse collapse" id="navbarTogglerDemo01">
+                        <ul class="d-flex navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light text-end" aria-current="page"
+                                    href="#portfolio">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light text-end" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light text-end" href="#account" tabindex="-1"
+                                    aria-disabled="true">ACCOUNT</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-6 d-flex justify-content-end align-items-center">
-                    <ul class="d-flex list-unstyled mb-0">
-                        <li>text</li>
-                        <li class="ms-2">text</li>
-                        <li class="ms-2">text</li>
-                        <li class="ms-2">text</li>
-                    </ul>
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
     <!-- /Header -->
@@ -41,13 +60,15 @@
         <!-- Section Jumbotron -->
         <section id="jumbotron">
             <div class="container-sm py-5 text-white">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-5 text-center">
-                        <div class="img_box mx-auto"></div>
-                        <h2 class="fs-1">Titolo</h2>
-                        <div class="star_box">stella</div>
-                        <p>testo - testo - testo</p>
+                <div class="row justify-content-center text-center">
+                    <div class="col-6 col-sm-4 col-lg-3">
+                        <img src="img/avatar.svg" class="img-fluid" alt="">
                     </div>
+                    <h2 class="fs-1">START BOOTSTRAP</h2>
+                    <div class="star_box hr-lines">
+                        <i class="white fas fa-star"></i>
+                    </div>
+                    <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
                 </div>
             </div>
         </section>
@@ -56,14 +77,45 @@
         <!-- Section Portfolio -->
         <section id="portfolio">
             <div class="container-xxl py-5">
-                <div class="row justify-content-around">
-                    <h3 class="fs-4 text-center">Portfolio</h3>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-2 p-3 border bg-light">2</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-2 p-3 border bg-light">3</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-2 p-3 border bg-light">1</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-2 p-3 border bg-light">2</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-2 p-3 border bg-light">3</div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 mt-2 p-3 border bg-light">1</div>
+                <h3 class="fs-2 text-center">PORTFOLIO</h3>
+                <div class="row justify-content-center">
+                    <div class="star_box hr-lines">
+                        <i class="white fas fa-star"></i>
+                    </div>
+                </div>
+
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card-img">
+                            <img class='img-fluid' src="img/cabin.png" alt="cabin">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card-img">
+                            <img class='img-fluid' src="img/cake.png" alt="cake">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card-img">
+                            <img class='img-fluid' src="img/circus.png" alt="circus">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card-img">
+                            <img class='img-fluid' src="img/game.png" alt="game">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card-img">
+                            <img class='img-fluid' src="img/safe.png" alt="safe">
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 p-3">
+                        <div class="card-img">
+                            <img class='img-fluid' src="img/submarine.png" alt="submarine">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -72,17 +124,27 @@
         <!-- Section About -->
         <section id="about">
             <div class="container-sm py-5 text-white">
-                <div class="titoli d-flex flex-column align-items-center">
-                    <h2 class="fs-4">Testo</h2>
-                    <div class="star_box">stella</div>
+                <div class="titoli">
+                    <h2 class="fs-1 text-center">Testo</h2>
+                    <div class="row justify-content-center">
+                        <div class="star_box hr-lines">
+                            <i class="white fas fa-star"></i>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 border mt-2 p-3 bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim facere expedita voluptatem molestias, eum vel! Animi, assumenda ducimus quidem, quibusdam provident at laboriosam autem, impedit cumque corporis vero voluptatum dolor!</div>
-                    <div class="col-sm-12 col-md-6 border  mt-2 p-3 bg-dark">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quo dolor alias id dignissimos, saepe eligendi consequuntur optio nisi, ad fugit qui? Maxime quibusdam beatae quidem placeat! Repellat, odio nostrum!</div>
+                <div class="row justify-content-center gy-3">
+                    <div class="col-sm-12 col-md-4 p-3">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Enim facere expedita voluptatem molestias, eum vel! Animi, assumenda ducimus
+                        quidem, quibusdam provident at laboriosam autem, impedit cumque corporis vero voluptatum dolor!
+                    </div>
+                    <div class="col-sm-12 col-md-4 p-3">Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Libero quo dolor alias id dignissimos, saepe eligendi consequuntur optio nisi,
+                        ad fugit qui? Maxime quibusdam beatae quidem placeat! Repellat, odio nostrum!</div>
                 </div>
                 <div class="titoli d-flex flex-column align-items-center">
-                    <div class="bottone">bottone</div>
+                    <button type="button" class="btn btn-outline-light"><i class="fa-solid fa-download"></i>
+                        Download</button>
                 </div>
             </div>
         </section>
@@ -91,15 +153,27 @@
         <!-- Section Contact -->
         <section id="contact">
             <div class="container-sm py-5">
-                <div class="titoli d-flex flex-column align-items-center">
-                    <h2 class="fs-4">Testo</h2>
-                    <div class="star_box">stella</div>
+                <h3 class="fs-2 text-center">PORTFOLIO</h3>
+                <div class="row justify-content-center">
+                    <div class="star_box hr-lines">
+                        <i class="white fas fa-star"></i>
+                    </div>
                 </div>
-                <div class="div py-2">testo</div>
-                <div class="div py-2">testo</div>
-                <div class="div py-2">testo</div>
-                <div class="div pb-5">testo</div>
-                <div class="bottone">bottone</div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <form class="gy-4">
+                            <input class="form-control form-control-lg" type="text" placeholder="Nome"
+                                aria-label=".form-control-lg example">
+                            <input class="form-control form-control-lg" type="email" placeholder="Email Address"
+                                aria-label=".form-control-lg example">
+                            <input class="form-control form-control-lg" type="number" placeholder="Phone Number"
+                                aria-label=".form-control-lg example">
+                            <label for="exampleFormControlTextarea1" class="form-label mt-3">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </form>
+                        <button class="btn btn-primary mt-3 .bg-info" type="submit">Send</button>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Section Contact -->
@@ -110,17 +184,43 @@
     <footer>
         <div class="container-xxl">
             <div class="row py-5">
-                <div class="col-sm-12 py-2 col-md-4 border bg-light">location</div>
-                <div class="col-sm-12 py-2 col-md-4 border bg-light">location</div>
-                <div class="col-sm-12 py-2 col-md-4 border bg-light">location</div>
+                <div class="col-sm-12 py-2 col-md-4 text-center">
+                    <h3 class="fs-5">LOCATION</h3>
+                    <p>2215 John Daniel Drive Clark MO 54243</p>
+                </div>
+                <div class="col-sm-12 py-2 col-md-4 text-center">
+                    <h3 class="fs-5">AROUND THE WEB </h3>
+                    <div class="d-flex justify-content-center">
+                        <div class="icone border border-light rounded-circle p-2 mx-1">
+                            <i class="sito fab fa-facebook-f"></i>
+                        </div>
+                        <div class="icone border border-light rounded-circle p-2 mx-1">
+                            <i class="sito fab fa-google-plus-g"></i>
+                        </div>
+                        <div class="icone border border-light rounded-circle p-2 mx-1">
+                            <i class="sito fab fa-twitter"></i>
+                        </div>
+                        <div class="icone border border-light rounded-circle p-2 mx-1">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-12 py-2 col-md-4 text-center">
+                    <h3 class="fs-5">ABOUT FREELANCER</h3>
+                    <p>Freelance is a free to use, open source Boostrap theme created by <span class="text-success">Start Bootstrap</span></p>
+                </div>
             </div>
         </div>
-            <div class="copyright py-5 text-white text-center">
-                copyright
 
-            </div>
+        <div class="copyright py-5 text-white text-center">
+            Copyright © Your Website 2019
+        </div>
     </footer>
     <!-- /Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

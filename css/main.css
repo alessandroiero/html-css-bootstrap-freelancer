@@ -1,0 +1,110 @@
+#jumbotron,
+#about{
+    background-color: var(--cyan);
+}
+
+.star_box{
+    font-size: 1.5625rem;
+}
+
+.hr-lines{
+    position: relative;
+    max-width: 350px;
+    text-align: center;
+  }
+  
+#jumbotron .hr-lines:before
+#about .hr-lines:before {
+    content:" ";
+    height: 4px;
+    width: 130px;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+#jumbotron .hr-lines:after,
+#about .hr-lines:after{
+    content:" ";
+    height: 4px;
+    width: 130px;
+    background: var(--primary-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+#jumbotron .hr-lines:before,
+#about .hr-lines:before{
+    content:" ";
+    height: 4px;
+    width: 130px;
+    background: var(--primary-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+#portfolio .hr-lines:after,
+#contact .hr-lines:after{
+    content:" ";
+    height: 4px;
+    width: 130px;
+    background: var(--black-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+
+#portfolio .hr-lines:before,
+#contact .hr-lines:before{
+    content:" ";
+    height: 4px;
+    width: 130px;
+    background: var(--black-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  
+#portfolio .hr-lines:after,
+#contact .hr-lines:after{
+    content:" ";
+    height: 4px;
+    width: 130px;
+    background: var(--black-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+  
+#portfolio img{
+    border-radius: .9375rem;
+}
+
+#contact .form-control{
+    border: 0;
+    border-bottom: 1px solid rgb(94, 92, 92);
+    border-radius: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+#contact .form-label,
+.form-control {
+    font-size: 30px;
+    color: rgb(90, 89, 89);
+    font-weight: 600;
+}
+
+#contact .btn{
+    background-color: #17ca9e;
+    border: none;
+}

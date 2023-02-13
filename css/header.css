@@ -1,0 +1,8 @@
+header{
+    background-color: var(--black-color);
+}
+
+header .navbar-brand{
+    font-weight: bold;
+}
+
