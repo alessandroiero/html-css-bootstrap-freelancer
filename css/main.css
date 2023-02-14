@@ -3,16 +3,6 @@
     background-color: var(--cyan);
 }
 
-.star_box{
-    font-size: 1.5625rem;
-}
-
-.hr-lines{
-    position: relative;
-    max-width: 350px;
-    text-align: center;
-  }
-  
 #jumbotron .hr-lines:before
 #about .hr-lines:before {
     content:" ";
@@ -100,11 +90,11 @@
 #contact .form-label,
 .form-control {
     font-size: 30px;
-    color: rgb(90, 89, 89);
+    color: var(--grey);
     font-weight: 600;
 }
 
 #contact .btn{
-    background-color: #17ca9e;
+    background-color: var(--cyan);
     border: none;
 }

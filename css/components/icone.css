@@ -1,0 +1,13 @@
+.icone{
+    height: 3.125rem;
+    width: 3.125rem;
+    position: relative;
+}
+
+.icone>*{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
